@@ -14,7 +14,7 @@ namespace Telief
         [Obsolete]
         public static void Main(string[] args)
         {
-            Client = new TelegramBotClient("Your Telgram Token");
+            Client = new TelegramBotClient("7501046372:AAFq3dNGrbBHAOYuvJqHOYkWV1gGCycwjRM");
             Client.OnMessage += Client_OnMessage;
             Client?.StartReceiving();
             Console.WriteLine("started");
@@ -24,7 +24,6 @@ namespace Telief
         [Obsolete]
         private static void Client_OnMessage(object? sender, MessageEventArgs e)
         {
-            Console.WriteLine($"{e.Message.Chat.Id} : {e.Message.Text}");
             if (e.Message.Type == MessageType.Text)
             {
                 long chatId = e.Message.Chat.Id;
@@ -32,7 +31,7 @@ namespace Telief
                 // Check if user wants to start chatting
                 if (e.Message.Text.ToLower() == "/start")
                 {
-                     Client?.SendTextMessageAsync(chatId, "Welcome! Type /connect to chat anonymously with someone.");
+                    Client?.SendTextMessageAsync(chatId, "Welcome! Type /connect to chat anonymously with someone.");
                     return;
                 }
 
@@ -67,7 +66,7 @@ namespace Telief
                 if (userPairs.ContainsKey(chatId))
                 {
                     var partnerId = userPairs[chatId];
-                     Client?.SendTextMessageAsync(partnerId, $"{chatId}: {e.Message.Text}");
+                    Client?.SendTextMessageAsync(partnerId, $"{chatId}: {e.Message.Text}");
                 }
                 else
                 {
