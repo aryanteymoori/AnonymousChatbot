@@ -14,7 +14,7 @@ namespace Telief
         [Obsolete]
         public static void Main(string[] args)
         {
-            Client = new TelegramBotClient("Your Telgram Api Token");
+            Client = new TelegramBotClient("Your Telgram Token");
             Client.OnMessage += Client_OnMessage;
             Client?.StartReceiving();
             Console.WriteLine("started");
