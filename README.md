@@ -34,7 +34,7 @@ Follow these steps to set up the bot on your system:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/anonymous-chatbot.git
+   git clone https://github.com/aryanteymoori/anonymous-chatbot.git
    ```
 
 2. Navigate to the project directory:
@@ -115,6 +115,6 @@ Contributions are welcome! Feel free to open issues or submit pull requests to e
 
 ## Contact
 
-For questions or feedback, reach out to [Your Name](mailto:your.email@example.com).
+For questions or feedback, reach out to [Aryan Teymoori](mailto:aryanteymoori@yahoo.com).
 
 Happy chatting! 🎉
